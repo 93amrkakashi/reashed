@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>بيانات مسح الطريق</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        direction: rtl;
+        text-align: center;
+      }
+      .bg-green {
+        background-color: #00b050 !important;
+        color: #000;
+      }
+      .bg-yellow {
+        background-color: #ffff00 !important;
+        color: #000;
+      }
+      .bg-danger {
+        background-color: #ff0000 !important;
+        color: #000;
+      }
+      .bg-gray {
+        background-color: #bfbfbf !important;
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container py-4">
+      <div class="row mb-3 align-items-center text-center">
+        <div class="col-md-4">
+          <p class="fw-bold">أمانة العاصمة المقدسة</p>
+          <p class="fw-bold">وكالة التشغيل والصيانة</p>
+          <p class="fw-bold">إدارة أصول النقل والبنية التحتية</p>
+          <p class="fw-bold">نظام إدارة وصيانة الطرق PMMS</p>
+          <p class="fw-bold">منصة مسارات</p>
+        </div>
+        <div class="col-md-8 border py-3">الخريطة</div>
+      </div>
+      <hr />
+      <h3>تقرير حالة الرصف (قرار الصيانة)</h3>
+      <hr />
+      <div class="d-flex flex-wrap justify-content-center my-3">
+        <div class="d-flex flex-column justify-content-start w-50">
+          <div class="d-flex">
+            <p class="bg-secondary w-50 p-3 fw-bold " >الحي</p>
+            <p class="w-50"></p>
+          </div>
+          <div class="d-flex">
+              <p class="bg-secondary w-50 p-3 fw-bold " >البلدية</p>
+            <p class="w-50"></p>
+          </div>
+        </div>
+        <div class="d-flex flex-column justify-content-start w-50">
+          <div class="d-flex">
+            <p class="bg-secondary w-50 p-3 fw-bold" >تصنيف الشارع</p>
+            <p class="w-50"></p>
+          </div>
+          <div class="d-flex">
+              <p class="bg-secondary w-50 p-3 fw-bold" >اسم الشارع</p>
+            <p class="w-50 "></p>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex">
+        <p class="bg-green w-25 p-3 fw-bold" >رقم المقطع </p>
+      <p class="w-75 border border-secondary "></p>
+    </div>
+      <!-- <button class="btn btn-success">رقم المقطع</button> -->
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th colspan="5" class="bg-green">بيانات مسح الطريق</th>
+            </tr>
+            <tr class="bg-yellow">
+              <th class="bg-yellow">رقم المسحة</th>
+              <th class="bg-yellow">تاريخ المسح</th>
+              <th class="bg-yellow">مساحة العينة</th>
+              <th class="bg-yellow">الطول</th>
+              <th class="bg-yellow">العرض</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="5"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th colspan="5" class="bg-green">حالة العيوب بالطريق</th>
+            </tr>
+            <tr class="bg-yellow">
+              <th class="bg-danger">العيوب</th>
+              <th class="bg-yellow">اسم العيب</th>
+              <th class="bg-yellow">الشدة</th>
+              <th class="bg-yellow">المساحة</th>
+              <th class="bg-yellow">الرمز</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th colspan="6" class="bg-green">قرار الصيانة للطريق</th>
+            </tr>
+            <tr class="bg-yellow">
+              <th class="bg-yellow">حالة الرصف</th>
+              <th class="bg-yellow">قيمة PCI</th>
+              <th class="bg-yellow">نوع قرار الصيانة</th>
+              <th class="bg-yellow">رقم قرار الصيانة في النظام</th>
+              <th class="bg-yellow">درجة أولوية الصيانة</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="5"></td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr class="bg-gray">
+              <th colspan="3">التكلفة التقديرية للصيانة (ريال)</th>
+              <td colspan="2"></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th colspan="2" class="bg-green">توصيات مقترحة عامة</th>
+            </tr>
+            <tr class="bg-yellow">
+              <th class="bg-yellow">تاريخ الصيانة الدورية المتوقع</th>
+              <th class="bg-yellow">تاريخ تنفيذ الصيانة الإحتمالية المتوقع</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
