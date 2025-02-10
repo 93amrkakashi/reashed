@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>تقرير حالة الرصف</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>تقرير بعد حالة الرصف</title>
+    <script src="./tailwind.js"></script>
     <style>
       body {
         direction: rtl;
@@ -25,7 +25,7 @@
         <div class="border border-gray-800 min-h-[350px]">الخريطة</div>
       </div>
       <hr class="my-4 border-gray-400" />
-      <h3 class="text-xl font-bold">تقرير حالة الرصف (قرار الصيانة)</h3>
+      <h3 class="text-xl font-bold">تقرير بعد حالة الرصف (التغذية الراجعة)</h3>
       <hr class="my-4 border-gray-400" />
 
       <div class="grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-4 my-4">
@@ -58,9 +58,26 @@
           </div>
         </div>
       </div>
-      <div class="flex border">
-        <p class="bg-green-500 w-1/4 p-3 font-bold text-black">رقم المقطع</p>
-        <p class="w-3/4 border"></p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="flex border  ">
+          <p class="bg-green-500 w-1/4 flex justify-center items-center font-bold text-black">رقم المقطع</p>
+          <p class="w-3/4 border flex justify-center items-center "></p>
+        </div>
+        <div class="">
+          <div class="flex border">
+            <p class="bg-green-500 w-1/4 p-2 font-bold text-black flex justify-center items-center">
+              رقم المقطع
+            </p>
+            <p class="w-3/4 border flex justify-center items-center "></p>
+          </div>
+          <div class="flex border">
+            <p class="bg-green-500 w-1/4 p-2 font-bold text-black flex justify-center items-center">
+              رقم المقطع
+            </p>
+            <p class="w-3/4 border flex justify-center items-center "></p>
+          </div>
+        </div>
       </div>
 
       <div class="overflow-x-auto my-4">
@@ -81,7 +98,40 @@
           </thead>
           <tbody>
             <tr>
-              <td colspan="5" class="p-3 border border-gray-800"></td>
+              <td  class="p-3 border border-gray-800"></td>
+              <td  class="p-3 border border-gray-800"></td>
+              <td  class="p-3 border border-gray-800"></td>
+              <td  class="p-3 border border-gray-800"></td>
+              <td  class="p-3 border border-gray-800"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="overflow-x-auto my-4">
+        <table class="w-full border-collapse border">
+          <thead>
+            <tr>
+              <th colspan="6" class="bg-green-500 text-black p-3">
+                بيانات التغذية الراجعة
+              </th>
+            </tr>
+            <tr class="bg-yellow-300 text-black">
+              <th class="p-3 border border-gray-800">رقم التغذية الراجعة</th>
+              <th class="p-3 border border-gray-800">تاريخ اللتغذية الراجعة</th>
+              <th class="p-3 border border-gray-800">نوع التغذية الراجعة</th>
+              <th class="p-3 border border-gray-800">مساحة العينة</th>
+              <th class="p-3 border border-gray-800">الطول</th>
+              <th class="p-3 border border-gray-800">العرض</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td  class="p-3 border border-gray-800"></td>
+              <td  class="p-3 border border-gray-800"></td>
+              <td  class="p-3 border border-gray-800"></td>
+              <td  class="p-3 border border-gray-800"></td>
+              <td  class="p-3 border border-gray-800"></td>
+              <td  class="p-3 border border-gray-800"></td>
             </tr>
           </tbody>
         </table>
@@ -143,7 +193,7 @@
               <th colspan="3" class="p-3 border border-gray-800 bg-gray-400">
                 التكلفة التقديرية للصيانة (ريال)
               </th>
-              <td colspan="2" class="p-3 border border-gray-800 "></td>
+              <td colspan="2" class="p-3 border border-gray-800 border"></td>
             </tr>
           </tfoot>
         </table>
